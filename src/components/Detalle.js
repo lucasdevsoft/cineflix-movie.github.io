@@ -5,7 +5,6 @@ import swAlert from '@sweetalert/with-react';
 
 
 function Detalle() {
-    let token = sessionStorage.getItem("token");
 
     let { id } = useParams();
 
@@ -24,7 +23,6 @@ function Detalle() {
 
     return (
         <>
-            { !token && <Navigate to="/" replace /> }
             {!movie && <div class="spinner-border text-warning" role="status">
                 <span class="visually-hidden">Loading...</span>
             </div> }
