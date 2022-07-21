@@ -3,13 +3,11 @@ import { Navigate, Link } from 'react-router-dom';
 
 function Favoritos ({ addOrRemoveFavorite, favorites }) {
     
-    const token = sessionStorage.getItem("token");
     
     
     return (
         <>
             
-            {!token && <Navigate to="/" replace />}
 
                 {favorites.length === 0 ? <h2>Agrega tus películas favoritas!</h2> : <h2>Tus películas favoritas</h2>}
             <div className="container mt-3">
