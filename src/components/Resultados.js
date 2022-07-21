@@ -6,7 +6,6 @@ import swAlert from '@sweetalert/with-react';
 
 
 function Resultados() {
-    let token = sessionStorage.getItem("token");
     
     const { keyword } = useParams();
 
@@ -40,7 +39,6 @@ function Resultados() {
     return (
         <>
             
-            {!token && <Navigate to="/" replace />}
             <section className="section-main m-4">
                 <h3 className="mb-4">Buscaste: "<em>{keyword}</em>" </h3>
                 <div className="row">
