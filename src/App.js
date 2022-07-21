@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 
 
 // Components
-import Login from './components/Login';
 import Listado from './components/Listado';
 import Detalle from "./components/Detalle";
 import Favoritos from "./components/Favoritos";
@@ -84,7 +83,6 @@ function App() {
       <Header favorites={favorites} />
       <main>
         <Routes>
-          <Route path="/" element={<Login />} />
           <Route path="/listado" element={<Listado addOrRemoveFavorite={addOrRemoveFavorite} />} />
           <Route path="/detalle/:id" element={<Detalle />} />
           <Route path="/resultados/:keyword" element={<Resultados addOrRemoveFavorite={addOrRemoveFavorite} />} />
