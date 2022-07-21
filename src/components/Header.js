@@ -15,8 +15,6 @@ function Header({ favorites }) {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <ul className="navbar-nav">
-                            <li className="nav-item"><Link className="nav-link text-warning fw-semibold " to='/listado'>Listado</Link>
-                            </li>
                             <li className="nav-item"><Link className="nav-link text-warning fw-semibold " to='/favoritos'>Favoritos</Link>
                             </li>
                             <li className="nav-link text-warning fw-semibold"><span to={'/favoritos'}>
