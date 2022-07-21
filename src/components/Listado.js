@@ -9,7 +9,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Listado({ addOrRemoveFavorite }) {
 
-    let token = sessionStorage.getItem("token");
     
 
     const [ moviesList, setMoviesList ] = useState([]);
@@ -29,7 +28,6 @@ function Listado({ addOrRemoveFavorite }) {
     
     return (
         <>
-            {!token && <Navigate to="/" replace />}
             <section className="m-4 ">
                 <div className="row">
                 {/* Estructura base */}
